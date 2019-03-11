@@ -1,0 +1,39 @@
+创建用户名
+git config --global user.name "fzy"
+
+创建邮箱
+git config --global user.email "1104679449@qq.com"
+
+git网站
+https://github.com/
+
+生成本地ssh：
+ ssh-keygen -t rsa -C 1104679449@qq.com
+
+测试连通性
+ssh -T git@github.com
+
+在本地新建git项目
+项目根目录 右键- git bash - git init
+
+在远程建立git项目
+new-建立项目-生成 https://github.com/q1104679449/mygitremote.git
+
+本地项目-远程项目关联
+git remote add origin git@github.com:q1104679449/mygitremote.git
+
+第一次发布项目（本地-远程）
+git add .			//文件-暂存区
+git commit -m"注释内容"	//暂存区-本地分支（默认master）
+git push -u origin master
+
+第一次下载项目（远程-本地）
+git clone
+
+
+更新（远程-本地）
+git add.
+git commit -m"提交到分支"
+git push origin master
+
+提交（本地-远程）
